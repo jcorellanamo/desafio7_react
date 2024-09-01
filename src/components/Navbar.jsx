@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { UserContext } from '../context/UserContext'; // Importar UserContext
-import { CartContext } from '../context/CartContext'; // Importar CartContext
+import { UserContext } from '../context/UserContext';
+import { CartContext } from '../context/CartContext';
 
 const Navbar = () => {
-  const { token, logout } = useContext(UserContext); // Usar el UserContext
+  const { token, logout } = useContext(UserContext);
   const { calculateTotal } = useContext(CartContext);
 
   return (
